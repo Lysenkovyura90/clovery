@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'task', 
     'rest_framework',
-    'django_filters'
+    'django_filters',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'task',
         'USER': 'postgres',
-        'PASSWORD':'postgres',
+        'PASSWORD':'Lysenkov237486',
         'HOST':'localhost',
         'PORT':'5432',
         
@@ -139,7 +140,7 @@ REST_FRAMEWORK =   {
                     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
 
                     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-                    'PAGE_SIZE': 2,
+                    'PAGE_SIZE': 1,
 
                     
                     
